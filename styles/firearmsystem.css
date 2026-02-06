@@ -1,0 +1,53 @@
+/* =============================================
+   FirearmSystem2024 — Firearm Pills
+   ============================================= */
+
+.firearm-pill {
+  background: #2b2f36;
+  border: 1px solid #555;
+  color: #e6e6e6;
+  font-weight: 600;
+}
+
+.firearm-pill:first-child {
+  border-color: #a33;
+  color: #ffb3b3;
+}
+/* =============================================
+   FirearmSystem2024 — Firearm Toggle
+   ============================================= */
+
+.firearm-toggle {
+  border-top: 1px solid #444;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+}
+
+.firearm-toggle label {
+  font-weight: 600;
+}
+
+.firearm-toggle .notes {
+  font-size: 0.8em;
+  color: #aaa;
+}   
+
+/* ================================
+   Firearm Inventory Status
+================================ */
+
+.firearm-status {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 0.75em;
+  opacity: 0.9;
+}
+
+.firearm-pill {
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  white-space: nowrap;
+}
