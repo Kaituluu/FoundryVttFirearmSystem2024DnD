@@ -31,10 +31,10 @@
 
   "esmodules": [
     "scripts/main.js"
-  
     ],
   "scripts": [
-    "scripts/actor-inventory-ui.js"
+    "scripts/actor-inventory-ui.js",
+    "scripts/actor-inventory-item-ui.js"
   ],
   "styles": [
     "styles/firearmsystem.css"

@@ -1,21 +1,47 @@
-/* =============================================
-   FirearmSystem2024 — Firearm Pills
-   ============================================= */
+/* =========================================================
+   FirearmSystem2024 — Firearm Pills (Base Styles)
+   ========================================================= */
 
 .firearm-pill {
-  background: #2b2f36;
-  border: 1px solid #555;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #e6e6e6;
   font-weight: 600;
+  white-space: nowrap;
 }
 
-.firearm-pill:first-child {
-  border-color: #a33;
-  color: #ffb3b3;
+/* Semantic modifiers (meaning-based, not order-based) */
+.firearm-pill.ammo {
+  border-color: #555;
 }
-/* =============================================
-   FirearmSystem2024 — Firearm Toggle
-   ============================================= */
+
+.firearm-pill.misfire {
+  border-color: #777;
+}
+
+/* =========================================================
+   FirearmSystem2024 — Firearm Inventory Status
+   ========================================================= */
+
+.firearm-status {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 0.75em;
+  opacity: 0.9;
+}
+
+/* Actor-sheet specific visual variant (optional override) */
+.firearm-status--actor .firearm-pill {
+  border-radius: 3px; /* more square for lists */
+  padding: 2px 6px;
+}
+
+/* =========================================================
+   FirearmSystem2024 — Firearm Toggle (Item Sheet)
+   ========================================================= */
 
 .firearm-toggle {
   border-top: 1px solid #444;
@@ -30,24 +56,20 @@
 .firearm-toggle .notes {
   font-size: 0.8em;
   color: #aaa;
-}   
-
-/* ================================
-   Firearm Inventory Status
-================================ */
-
-.firearm-status {
-  display: flex;
-  gap: 6px;
-  margin-top: 2px;
-  font-size: 0.75em;
-  opacity: 0.9;
 }
 
-.firearm-pill {
-  padding: 1px 6px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  white-space: nowrap;
+/* =========================================================
+   FirearmSystem2024 — Future State Hooks (no JS yet)
+   ========================================================= */
+
+/* Empty magazine (planned use) */
+.firearm-pill.ammo.empty {
+  border-color: #a33;
+  color: #ffb3b3;
+}
+
+/* Jammed / misfire triggered (planned use) */
+.firearm-pill.misfire.danger {
+  border-color: #c77;
+  color: #ffd6d6;
 }
