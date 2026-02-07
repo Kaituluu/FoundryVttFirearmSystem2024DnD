@@ -34,7 +34,8 @@
     ],
   "scripts": [
     "scripts/actor-inventory-ui.js",
-    "scripts/actor-inventory-item-ui.js"
+    "scripts/actor-inventory-item-ui.js",
+    "scripts/actor-chat-firearm-ui.js"
   ],
   "styles": [
     "styles/firearmsystem.css"

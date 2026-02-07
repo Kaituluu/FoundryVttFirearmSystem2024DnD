@@ -133,11 +133,11 @@ Hooks.on("renderItemSheet5e", (app, html) => {
       descriptionTab.insertAdjacentHTML(
         "beforeend",
         `
-        <div class="dnd5e pills firearm-pill-bar">
-          <span class="pill">🔫 Firearm</span>
-          <span class="pill">💥 Misfire: ${fs.misfire}</span>
-          <span class="pill">
-            🔄 Ammo: ${fs.capacity.current}/${fs.capacity.max}
+        <div class="pills">
+          <span class="pill transparent">Firearm</span>
+          <span class="pill transparent">Misfire: ${fs.misfire}</span>
+          <span class="pill transparent">
+            Ammo: ${fs.capacity.current}/${fs.capacity.max}
           </span>
         </div>
         `

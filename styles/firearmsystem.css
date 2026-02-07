@@ -5,7 +5,7 @@
 .firearm-pill {
   padding: 1px 6px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #e6e6e6;
   font-weight: 600;
@@ -13,13 +13,7 @@
 }
 
 /* Semantic modifiers (meaning-based, not order-based) */
-.firearm-pill.ammo {
-  border-color: #555;
-}
 
-.firearm-pill.misfire {
-  border-color: #777;
-}
 
 /* =========================================================
    FirearmSystem2024 — Firearm Inventory Status
@@ -73,3 +67,4 @@
   border-color: #c77;
   color: #ffd6d6;
 }
+
